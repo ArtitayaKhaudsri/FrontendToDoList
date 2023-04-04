@@ -5,23 +5,33 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.15",
     "@mui/styled-engine-sc": "^5.11.11",
+    "@mui/x-data-grid": "^6.0.4",
     "@mui/x-date-pickers": "^6.0.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.3.3",
     "dayjs": "^1.11.7",
+    "material-react-table": "^1.9.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-date-picker": "^9.2.0",
     "react-datepicker": "^4.11.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-multiple-datepicker": "^0.1.0",
+    "react-notifications": "^1.7.4",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
+    "react-simplert": "^0.0.2",
     "react-time-picker": "^5.2.0",
     "react-timeit": "^1.2.12",
+    "save": "^2.9.0",
     "styled-components": "^5.3.9",
     "web-vitals": "^2.1.4"
   },
@@ -48,5 +58,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
