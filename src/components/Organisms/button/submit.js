@@ -14,6 +14,7 @@ export default function Submit(props) {
 
     const [error, setError] = useState(false);
     const [success, setSuccess] = useState(false);
+    const [message, setMessage] = useState('')
 
     const handleErrorOpen = () => {
         setError(true);
@@ -43,7 +44,7 @@ export default function Submit(props) {
                         date: props.date,
                         location: props.location,
                         })
-                        .then((response) => console.log(response))
+                        .then((response) => setMessage(response.data.message))
                         .catch((err) => {
                             console.log(err.message);
                         });
@@ -59,7 +60,7 @@ export default function Submit(props) {
                             date: props.date,
                             location: props.location,
                         })
-                        .then((response) => console.log(response))
+                        .then((response) => setMessage(response.data.message))
                         .catch((err) => {
                             console.log(err.message);
                         });
@@ -100,7 +101,7 @@ export default function Submit(props) {
                     </DialogTitle>
                     <DialogContent>
                         <DialogContentText>
-                            <label className={"status"}>{props.type} to do list success</label>
+                            <label className={"status"}>{message}</label>
                         </DialogContentText>
                     </DialogContent>
                     <DialogActions >

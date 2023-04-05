@@ -1,7 +1,8 @@
 .status {
     color: black;
-    font-size: 25px;
-    margin: 0 30px;
+    font-size: 20px;
+    margin: 0 10px;
+    text-align: center;
 }
 .icon-status {
     display: flex;
@@ -11,6 +12,7 @@
 }
 .area {
     text-align: center;
+    word-wrap: break-word;
 }
 .position-button {
     margin: auto;
