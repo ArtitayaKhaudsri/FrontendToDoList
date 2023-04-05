@@ -1,0 +1,21 @@
+.completed {
+    text-decoration: line-through;
+    margin-left: 7px;
+}
+.unsuccess {
+    margin-left: 7px;
+}
+.col {
+    height: 30px;
+}
+.detail {
+    padding: 10px 0;
+    width: 350px;
+}
+.detail-box {
+    background-color: white;
+    width: 97%;
+    padding: 5px;
+    border-radius: 10px;
+}
+

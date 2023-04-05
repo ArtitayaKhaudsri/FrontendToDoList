@@ -1,0 +1,8 @@
+.position-button {
+    display: flex;
+    justify-content: flex-end;
+}
+.button-form {
+    display:inline-block;
+    margin: 5px;
+}

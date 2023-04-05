@@ -1,10 +1,36 @@
-
-.button-site-bar {
-  position: absolute;
-  margin: -57px 20px;
+.display {
+    margin-bottom: 65px;
+}
+.boxList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boxToDoList {
+    width: 100%;
+    font-size: 20px;
+    text-align: start;
+    padding: 20px 30px;
+}
+.table {
+    width: 50%;
+}
+.icon {
+    text-align: center;
+    margin: auto auto;
+}
+.completed {
+    text-decoration: line-through;
+}
+.button-form {
+    text-align: end;
 }
 .add {
-  position: absolute;
-  right: 3%;
-  bottom: 3%;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    background-color: white;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
 }

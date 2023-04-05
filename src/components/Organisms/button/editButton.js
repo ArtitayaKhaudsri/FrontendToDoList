@@ -12,7 +12,6 @@ export default function EditButton(props) {
 
     const [topic, setTopic] = useState(props.data.topic);
     const [title, setTitle] = useState(props.data.title);
-    const [date, setDate] = useState(props.data.data);
     const [location, setLocation] = useState(props.data.location);
 
     const [editOpen, setEditOpen] = useState(false)
@@ -45,7 +44,7 @@ export default function EditButton(props) {
                             </div>
                             <div className={"position-button"}>
                                 <div className={"button-form"}>
-                                    <Submit topic={topic} title={title} date={date} location={location} id={props.data.id} type={"Edit"}/>
+                                    <Submit topic={topic} title={title} date={props.data.date} location={location} id={props.data.id} type={"Edit"}/>
                                 </div>
                                 <div onClick={(event) => handleCloseEdit(event)} className={"button-form"}>
                                     <BackButton/>

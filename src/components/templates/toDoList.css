@@ -1,0 +1,12 @@
+.day {
+    margin: -10px 0px;
+    font-size: 15px;
+}
+.list {
+    margin: 10px 25px;
+    padding: 10px;
+    background-color: #000044;
+    color: white;
+    border-radius: 10px;
+    width: 350px;
+}
