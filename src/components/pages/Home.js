@@ -16,7 +16,6 @@ export default function Home() {
         try {
             axios.get("http://localhost:5000/api/toDoLists")
                 .then((response) => {
-                    console.log(response)
                     setData(response.data.data);
                 })
                 .catch((err) => {
