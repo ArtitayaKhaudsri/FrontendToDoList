@@ -5,6 +5,7 @@ import DetailToDoList from "../../Organisms/showDetail/detailToDoList";
 import Collapse from "@mui/material/Collapse";
 import {FiCheckSquare, FiSquare} from "react-icons/fi"
 import "./listToDoList.css"
+import axios from "axios";
 
 export default function ListToDoList(props) {
 
@@ -15,13 +16,14 @@ export default function ListToDoList(props) {
         setOpen(!open)
     }
 
-    const handleButtonCheckList = (id) => {
+    const handleButtonCheckList = () => {
         try {
-            fetch(`http://localhost:5000/api/editStatusToDoList/${id}`)
-                .then((response) => response.json())
-                .catch((err) => {
-                    console.log(err.message);
-                });
+            axios.post(`http://localhost:5000/api/editToDoList/${props.data.id}`, {
+                success: !props.data.success
+            }).then((response) => console.log(response))
+            .catch((err) => {
+                console.log(err.message);
+            });
         }
         catch (error) {
             return <label>Sorry can't connect Database</label>
