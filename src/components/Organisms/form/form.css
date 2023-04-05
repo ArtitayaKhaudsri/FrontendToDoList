@@ -1,0 +1,18 @@
+.form-create {
+    padding: 0 20px;
+    width: 300px;
+}
+.input-text {
+    width: 100%;
+    margin-top: 10px;
+}
+p {
+    font-size: 16px;
+}
+.position-button {
+    float: right;
+    position: relative;
+}
+.button-form {
+    display:inline-block;
+}
