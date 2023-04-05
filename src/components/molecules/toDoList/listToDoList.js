@@ -76,8 +76,10 @@ export default function ListToDoList(props) {
         <>
             <tr className={"col"}>
                 <td>
-                    {iconCheckList()}
-                    <label className={onCheckList()}>{props.data.topic}</label>
+                    <div className={"topic"}>
+                        {iconCheckList()}
+                        <label className={onCheckList()}>{props.data.topic}</label>
+                    </div>
                 </td>
                 <td className={"icon"}>{iconStatus(props.data.success)}</td>
                 <td className={"icon"} onClick={(event) => handleOpen(event)}>{iconDetail()}</td>

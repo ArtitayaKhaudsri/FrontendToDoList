@@ -9,9 +9,21 @@ export default function DetailToDoList(props) {
     return (
         <Box component="form">
             <article >
-                <TextField sx={{my: 1}} disabled id='outlined-disabled' label="title" defaultValue={props.data.title} value={props.data.title} style={{width:"100%"}} />
-                <TextField sx={{my: 1}} disabled id='outlined-disabled' label="date" defaultValue={props.data.date} value={props.data.date} style={{width: "100%"}}/>
-                <TextField sx={{my: 1}} disabled id='outlined-disabled' label="location" defaultValue={props.data.location} value={props.data.location} style={{width: "100%"}}/>
+                <TextField sx={{my: 1}} disabled
+                           id='outlined-textarea' label="title"
+                           defaultValue={props.data.title}
+                           value={props.data.title}
+                           style={{width:"100%"}} multiline/>
+                <TextField sx={{my: 1}} disabled
+                           id='outlined-textarea' label="date"
+                           defaultValue={props.data.date}
+                           value={props.data.date}
+                           style={{width: "100%"}} multiline/>
+                <TextField sx={{my: 1}} disabled
+                           id='outlined-textarea' label="location"
+                           defaultValue={props.data.location}
+                           value={props.data.location}
+                           style={{width: "100%"}} multiline/>
             </article>
             <footer className={"position-button"}>
                 <div className={"button-form"}>

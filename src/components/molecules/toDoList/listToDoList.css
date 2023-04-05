@@ -18,4 +18,10 @@
     padding: 5px;
     border-radius: 10px;
 }
+.topic {
+    max-width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
