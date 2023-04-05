@@ -1,0 +1,18 @@
+.status {
+    color: black;
+    font-size: 25px;
+    margin: 0 30px;
+}
+.icon-status {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+}
+.area {
+    text-align: center;
+}
+.position-button {
+    margin: auto;
+    padding-bottom: 10px;
+}
